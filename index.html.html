@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TK PHYSICS | Tharusha Liyanage</title>
+<meta name="description" content="TK Physics — A/L Physics Online Classes by Tharusha Liyanage.">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{
+fontFamily:{sans:['Inter','Noto Sans Sinhala','system-ui','sans-serif']},
+keyframes:{
+float:{'0%,100%':{transform:'translateY(0)'},'50%':{transform:'translateY(-10px)'}},
+pulseSoft:{'0%,100%':{transform:'scale(1)',opacity:.65},'50%':{transform:'scale(1.07)',opacity:1}},
+orbit:{'0%':{transform:'rotate(0deg)'},'100%':{transform:'rotate(360deg)'}},
+reveal:{'0%':{opacity:0,transform:'translateY(35px) scale(.98)'},'100%':{opacity:1,transform:'translateY(0) scale(1)'}},
+videoFloat:{'0%,100%':{transform:'translateY(0)'},'50%':{transform:'translateY(-7px)'}}
+},
+animation:{float:'float 5s ease-in-out infinite',pulseSoft:'pulseSoft 3.5s ease-in-out infinite',orbit:'orbit 20s linear infinite',videoFloat:'videoFloat 6s ease-in-out infinite'}
+}}}
+</script>
+<style>
+html{scroll-behavior:smooth}
+body{background:radial-gradient(circle at 10% 5%,rgba(37,99,235,.08),transparent 28%),radial-gradient(circle at 90% 15%,rgba(124,58,237,.07),transparent 28%),#f8fafc}
+.grid-bg{background-image:linear-gradient(rgba(15,23,42,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(15,23,42,.04) 1px,transparent 1px);background-size:36px 36px}
+.glass{background:rgba(255,255,255,.76);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid rgba(148,163,184,.2);box-shadow:0 18px 50px rgba(15,23,42,.07)}
+.text-gradient{background:linear-gradient(90deg,#2563eb,#7c3aed,#0891b2);-webkit-background-clip:text;background-clip:text;color:transparent}
+.teacher-photo{filter:drop-shadow(0 30px 35px rgba(15,23,42,.2));}
+.card-hover{transition:.35s ease}
+.card-hover:hover{transform:translateY(-8px);box-shadow:0 24px 55px rgba(15,23,42,.11);border-color:rgba(37,99,235,.25)}
+.video-card{transition:transform .45s ease,box-shadow .45s ease,border-color .45s ease}
+.video-card:hover{transform:translateY(-10px);box-shadow:0 30px 70px rgba(2,6,23,.28);border-color:rgba(96,165,250,.5)}
+.reveal-on-scroll{opacity:0;transform:translateY(35px) scale(.98)}
+.reveal-on-scroll.is-visible{animation:reveal .8s cubic-bezier(.22,1,.36,1) forwards}
+.video-glow{box-shadow:0 0 0 1px rgba(255,255,255,.08),0 0 80px rgba(37,99,235,.12)}
+@media(max-width:767px){
+  .mobile-photo-wrap{min-height:500px!important;height:500px!important}
+  .mobile-photo{height:475px!important;max-width:100%!important;left:50%!important;right:auto!important;transform:translateX(-50%)!important}
+}
+@media(prefers-reduced-motion:reduce){
+*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}
+}
+</style>
+</head>
+
+<body class="text-slate-800 antialiased">
+
+<header class="fixed top-0 left-0 right-0 z-50 border-b border-slate-200/70 glass">
+<nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
+<a href="#home" class="text-xl font-black tracking-tight">TK <span class="text-blue-600">PHYSICS</span></a>
+<div class="hidden items-center gap-7 text-sm font-semibold md:flex">
+<a href="#about" class="hover:text-blue-600 transition">ගුරුවරයා</a>
+<a href="#features" class="hover:text-blue-600 transition">විශේෂත්වය</a>
+<a href="#classes" class="hover:text-blue-600 transition">Classes</a>
+<a href="#our-classes" class="hover:text-blue-600 transition">Our Classes</a>
+<a href="#contact" class="hover:text-blue-600 transition">සම්බන්ධ වන්න</a>
+</div>
+<a href="https://jbxacademy.ai.studio/" target="_blank" rel="noopener" class="rounded-full bg-slate-950 px-5 py-2.5 text-sm font-bold text-white shadow-lg hover:-translate-y-0.5 transition">LMS Login</a>
+</nav>
+</header>
+
+<main id="home">
+
+<section class="relative min-h-screen overflow-hidden grid-bg pt-32">
+<div class="absolute left-[7%] top-40 h-24 w-24 rounded-full bg-blue-400/15 animate-pulseSoft"></div>
+<div class="absolute right-[8%] top-52 h-36 w-36 rounded-full bg-violet-400/15 animate-pulseSoft"></div>
+
+<div class="mx-auto grid max-w-7xl items-center gap-6 px-5 pb-12 lg:grid-cols-[1.05fr_.95fr] lg:gap-10 lg:px-8 lg:pb-24">
+
+<div class="relative z-10">
+<div class="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-100 bg-white/80 px-4 py-2 text-xs font-bold text-blue-700 shadow-sm">
+<span class="h-2 w-2 rounded-full bg-blue-600 animate-pulse"></span>A/L PHYSICS • ONLINE LEARNING
+</div>
+<h1 class="text-5xl font-black leading-[.98] tracking-tight sm:text-6xl lg:text-8xl">TK <span class="text-gradient">PHYSICS</span></h1>
+<p class="mt-7 text-2xl font-extrabold leading-snug text-slate-900 sm:text-3xl">
+Physics ඉගෙනගන්න.<br><span class="text-blue-600">Physics තේරුම්ගන්න.</span><br>Physics ජයගන්න.
+</p>
+<p class="mt-5 max-w-2xl text-lg font-semibold leading-8 text-slate-600">Tharusha Liyanage විසින් මෙහෙයවන Physics Online Class</p>
+<p class="mt-3 max-w-2xl text-base leading-7 text-slate-500">A/L Physics සඳහා සංකල්ප පැහැදිලිව, ක්‍රමානුකූලව සහ විභාගයට අවශ්‍ය ආකාරයෙන් ඉගෙනගැනීමට නිර්මාණය කළ Online Physics පන්තියකි.</p>
+
+<div class="mt-8 flex flex-col gap-3 sm:flex-row">
+<a href="https://wa.me/94768091175?text=Hello%20TK%20Physics%2C%20I%20would%20like%20to%20join%20the%20class." target="_blank" rel="noopener" class="rounded-2xl bg-blue-600 px-7 py-4 text-center font-extrabold text-white shadow-xl shadow-blue-600/20 hover:bg-blue-700 hover:-translate-y-1 transition">පන්තියට සම්බන්ධ වන්න →</a>
+<a href="#classes" class="rounded-2xl border border-slate-200 bg-white px-7 py-4 text-center font-extrabold text-slate-800 shadow-sm hover:-translate-y-1 transition">වැඩි විස්තර</a>
+</div>
+</div>
+
+<!-- Teacher photo: ONE place only; centered on mobile -->
+<div class="mobile-photo-wrap relative mx-auto flex min-h-[500px] h-[500px] w-full max-w-xl items-end justify-center sm:min-h-[620px] sm:h-[620px] lg:min-h-[680px] lg:h-[680px]">
+<div class="absolute left-1/2 bottom-12 h-80 w-80 -translate-x-1/2 rounded-full bg-blue-100/80 blur-3xl animate-pulseSoft"></div>
+<div class="absolute left-1/2 bottom-16 h-96 w-96 -translate-x-1/2 rounded-full border border-blue-200/60"></div>
+<div class="absolute left-1/2 bottom-28 h-72 w-72 -translate-x-1/2 rounded-full border border-violet-200/70"></div>
+<div class="absolute left-1/2 bottom-32 h-[430px] w-[430px] -translate-x-1/2 rounded-full border border-dashed border-blue-200/60 animate-orbit"></div>
+
+<div class="absolute left-[8%] top-24 hidden rounded-2xl border border-white bg-white/80 p-4 shadow-xl backdrop-blur animate-float lg:block">
+<div class="text-xs font-bold text-slate-400">LEARN</div><div class="mt-1 text-lg font-black">Understand.</div>
+</div>
+<div class="absolute right-[5%] top-36 hidden rounded-2xl border border-white bg-white/80 p-4 shadow-xl backdrop-blur animate-float lg:block">
+<div class="text-xs font-bold text-slate-400">A/L</div><div class="mt-1 text-lg font-black text-blue-600">Achieve.</div>
+</div>
+
+<div class="absolute left-[7%] top-12 text-lg font-black text-blue-700/55 animate-float lg:left-[12%]">F = ma</div>
+<div class="absolute right-[7%] top-20 text-lg font-black text-violet-600/50 animate-float lg:right-[12%]">v = u + at</div>
+<div class="absolute left-[10%] bottom-24 text-lg font-black text-slate-500/45 animate-float lg:left-[15%]">E = mc²</div>
+<div class="absolute right-[8%] bottom-36 text-lg font-black text-blue-700/50 animate-float lg:right-[14%]">λ = h/p</div>
+
+<img src="https://cdn.phototourl.com/free/2026-09-07-d8d18fa3-b55e-4016-ae55-6fb9777f0d44.png" alt="Tharusha Liyanage"
+class="teacher-photo mobile-photo absolute bottom-0 left-1/2 z-10 h-[475px] w-auto max-w-[92%] -translate-x-1/2 object-contain sm:h-[590px] lg:h-[660px] animate-float">
+
+<div class="absolute bottom-2 left-1/2 z-20 w-[92%] -translate-x-1/2 sm:bottom-4 sm:w-[82%]">
+<div class="glass rounded-2xl px-5 py-4">
+<div class="text-[10px] font-bold uppercase tracking-[.18em] text-blue-700">Instructor</div>
+<div class="mt-1 text-base font-black text-slate-950">Tharusha Liyanage</div>
+<div class="mt-1 text-xs text-slate-500">University of Ruhuna • Computer Science</div>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="about" class="bg-white py-24">
+<div class="mx-auto max-w-7xl px-5 lg:px-8">
+<div class="grid gap-10 lg:grid-cols-[.8fr_1.2fr] lg:items-center">
+<div><span class="text-sm font-black uppercase tracking-[.25em] text-blue-600">👨‍🏫 Teacher</span><h2 class="mt-4 text-4xl font-black tracking-tight sm:text-5xl">ගුරුවරයා ගැන</h2></div>
+<div class="rounded-[2rem] border border-slate-200 bg-slate-50 p-7 shadow-sm sm:p-10">
+<h3 class="text-3xl font-black">Tharusha Liyanage</h3>
+<p class="mt-2 font-bold text-blue-600">University of Ruhuna – Undergraduate • Computer Science</p>
+<p class="mt-5 text-lg leading-8 text-slate-600">Physics විෂයය සරලව හා පැහැදිලිව අවබෝධ කරගැනීමට අවශ්‍ය මූලික සංකල්පවල සිට විභාග ප්‍රශ්න විසඳීම දක්වා ක්‍රමානුකූලව මඟපෙන්වන Physics ගුරුවරයෙකි.</p>
+<blockquote class="mt-7 border-l-4 border-blue-600 pl-5 text-xl font-extrabold leading-8 text-slate-900">“Physics කියන්නේ මතක තබාගන්න විෂයක් නෙවෙයි — තේරුම්ගන්න විෂයක්.”</blockquote>
+</div>
+</div>
+</div>
+</section>
+
+<section id="features" class="relative overflow-hidden py-24">
+<div class="absolute inset-0 grid-bg opacity-60"></div>
+<div class="relative mx-auto max-w-7xl px-5 lg:px-8">
+<div class="mx-auto max-w-3xl text-center"><span class="text-sm font-black uppercase tracking-[.25em] text-blue-600">Why TK Physics</span><h2 class="mt-4 text-4xl font-black tracking-tight sm:text-6xl">🚀 ඇයි අපේ Physics පන්තිය තෝරාගත යුත්තේ?</h2><p class="mt-5 text-lg font-semibold leading-8 text-slate-500">🧠 ප්‍රශ්න හිතන්න පුරුදු කරවන ශ්‍රී ලංකාවේ වෙනස්ම Physics පන්තියක්!</p></div>
+<div class="mx-auto mt-8 max-w-4xl rounded-[2rem] border border-blue-100 bg-white/80 p-7 text-center shadow-sm backdrop-blur sm:p-10">
+<p class="text-base leading-8 text-slate-600 sm:text-lg">Physics කියන්නේ සිද්ධාන්ත මතක තබාගෙන පමණක් ලකුණු ගන්න පුළුවන් විෂයක් නෙවෙයි. ප්‍රශ්නයක් දැක්කම <b class="text-slate-900">හිතන්න, විශ්ලේෂණය කරන්න සහ නිවැරදි ක්‍රමයට විසඳන්න</b> පුරුදු විය යුතු විෂයක්.</p>
+<p class="mt-4 text-base font-bold leading-8 text-blue-700 sm:text-lg">ඒ නිසාම අපේ අරමුණ “ඉගැන්වීම” පමණක් නොව, දරුවාට Physics හිතන්න පුරුදු කිරීමයි.</p>
+</div>
+<div class="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+<article class="card-hover rounded-3xl border border-slate-200 bg-white p-7 shadow-sm"><div class="text-3xl">📚</div><h3 class="mt-5 text-xl font-black">Theory – සිද්ධාන්ත මුල සිට</h3><p class="mt-3 text-sm leading-7 text-slate-500">Zero Level එකේ සිට සරලව, පැහැදිලිව සහ ක්‍රමානුකූලව සම්පූර්ණ සිද්ධාන්තය ආවරණය කරමින් <b>Zero → Hero</b> ගමනක්.</p></article>
+<article class="card-hover rounded-3xl border border-slate-200 bg-white p-7 shadow-sm"><div class="text-3xl">✍️</div><h3 class="mt-5 text-xl font-black">වැඩ කරවන පන්තියක්</h3><p class="mt-3 text-sm leading-7 text-slate-500">ගුරුවරයා කරන උදාහරණ බලලා ඉන්න පන්තියක් නෙවෙයි. දරුවාටම ප්‍රශ්න විසඳවමින් Physics හැකියාව ගොඩනගන පන්තියක්.</p></article>
+<article class="card-hover rounded-3xl border border-slate-200 bg-white p-7 shadow-sm"><div class="text-3xl">🧠</div><h3 class="mt-5 text-xl font-black">ප්‍රශ්න හිතන්න පුරුදු කිරීම</h3><p class="mt-3 text-sm leading-7 text-slate-500">Formula එකක් මතක තබාගෙන answer එක සොයනවා වෙනුවට, “ඇයි?”, “කොහොමද?”, “මොන concept එකද?” කියලා හිතන්න පුරුදු කිරීම.</p></article>
+<article class="card-hover rounded-3xl border border-slate-200 bg-white p-7 shadow-sm"><div class="text-3xl">👨‍🏫</div><h3 class="mt-5 text-xl font-black">එක එක දරුවා කෙරෙහි විශේෂ අවධානය</h3><p class="mt-3 text-sm leading-7 text-slate-500">හැම දරුවෙකුගේම දුර්වලතා හඳුනාගෙන, පුද්ගලික අවධානය සහ මගපෙන්වීම ලබාදීම අපේ විශේෂත්වයක්.</p></article>
+<article class="card-hover rounded-3xl border border-slate-200 bg-white p-7 shadow-sm"><div class="text-3xl">📝</div><h3 class="mt-5 text-xl font-black">සුපිරිම Paper Class එක</h3><p class="mt-3 text-sm leading-7 text-slate-500">Past Papers, Model Papers සහ විභාගයට අදාළ ගැටලු ක්‍රමානුකූලව සාකච්ඡා කරමින් නිවැරදිව පිළිතුරු ලියන හැකියාව වර්ධනය කිරීම.</p></article>
+<article class="card-hover rounded-3xl border border-slate-200 bg-white p-7 shadow-sm"><div class="text-3xl">🎯</div><h3 class="mt-5 text-xl font-black">Exam-Oriented Training</h3><p class="mt-3 text-sm leading-7 text-slate-500">ලකුණු ලබාගන්නා ආකාරය, කාල කළමනාකරණය සහ ප්‍රශ්න පත්‍රයට මුහුණ දෙන ආකාරය පිළිබඳ පුහුණුව.</p></article>
+<article class="card-hover rounded-3xl border border-slate-200 bg-white p-7 shadow-sm"><div class="text-3xl">📞</div><h3 class="mt-5 text-xl font-black">24 Hours Sir Contact & Support</h3><p class="mt-3 text-sm leading-7 text-slate-500">පන්තියෙන් පිටතදීත් Physics ගැටලු සහ පැහැදිලි කිරීම් සඳහා WhatsApp හෝ Direct Calling හරහා පැය 24 පුරා සම්බන්ධ විය හැක.</p><div class="mt-4 flex flex-wrap gap-2 text-xs font-black text-blue-700"><span class="rounded-full bg-blue-50 px-3 py-2">💬 WhatsApp</span><span class="rounded-full bg-blue-50 px-3 py-2">📞 Direct Calling</span><span class="rounded-full bg-blue-50 px-3 py-2">⏰ 24 Hours</span></div></article>
+</div>
+<div class="mt-14 overflow-hidden rounded-[2rem] bg-slate-950 p-8 text-center text-white shadow-2xl sm:p-12">
+<div class="text-sm font-black uppercase tracking-[.25em] text-blue-400">🌟 අපේ අරමුණ</div>
+<h3 class="mt-5 text-2xl font-black leading-tight sm:text-4xl">“Physics දන්න දරුවෙක්” හදන එක නෙවෙයි.<br><span class="text-gradient">“Physics හිතන්න පුළුවන් දරුවෙක්”</span> හදන එකයි.</h3>
+<div class="mt-8 text-lg font-black tracking-wide sm:text-2xl">🚀 ZERO TO HERO</div>
+<p class="mt-3 text-sm font-bold text-slate-400 sm:text-base">Theory → Understanding → Practice → Problem Solving → Papers → Exam Success</p>
+<p class="mx-auto mt-6 max-w-2xl text-sm leading-7 text-slate-400">ඔබේ Physics ගමනේ ආරම්භය Zero වුණත්, අවසානය Hero කෙනෙක් වීම අපේ අරමුණයි.</p>
+</div>
+</div>
+</section>
+
+<section id="classes" class="bg-slate-950 py-24 text-white">
+<div class="mx-auto max-w-7xl px-5 lg:px-8">
+<div class="max-w-3xl"><span class="text-sm font-black uppercase tracking-[.25em] text-blue-400">Courses</span><h2 class="mt-4 text-4xl font-black tracking-tight sm:text-5xl">📚 අපේ Physics Classes</h2><p class="mt-4 text-slate-400">ඔබගේ A/L වසරට සහ අවශ්‍යතාවයට ගැළපෙන පන්තිය තෝරන්න.</p></div>
+
+<div class="mt-14 grid gap-6 lg:grid-cols-3">
+
+<article class="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[.06] p-7 backdrop-blur">
+<div class="absolute right-0 top-0 h-32 w-32 rounded-full bg-blue-500/20 blur-3xl"></div>
+<div class="relative">
+<span class="inline-flex rounded-full bg-blue-500/15 px-3 py-1 text-xs font-black text-blue-300">2027 A/L</span>
+<h3 class="mt-5 text-2xl font-black">2027 SPEED THEORY</h3>
+<p class="mt-3 font-bold text-blue-300">⚡ වේගවත්ම මාර්ගයෙන් Physics Theory ආවරණය කරමු.</p>
+<p class="mt-4 text-sm leading-7 text-slate-400">2027 A/L සඳහා සූදානම් වන සිසුන් වෙනුවෙන් නිර්මාණය කළ Speed Theory Class එකකි. විෂය නිර්දේශයේ Theory කොටස් ක්‍රමානුකූලව ආවරණය කරමින්, වැදගත් සංකල්ප පැහැදිලි කර දී ඒවා ප්‍රශ්න විසඳීම සඳහා භාවිතා කරන ආකාරය පිළිබඳව අවධානය යොමු කරයි.</p>
+<p class="mt-5 text-sm font-bold text-slate-300">සුදුසු: 2027 A/L සිසුන් සඳහා</p>
+<a href="https://wa.me/94768091175?text=Hello%20TK%20Physics%2C%20I%20am%20interested%20in%20the%202027%20Speed%20Theory%20Class." target="_blank" rel="noopener" class="mt-7 block rounded-xl bg-white px-5 py-3.5 text-center font-black text-slate-950 hover:bg-blue-400 hover:text-white transition">2027 Speed Theory – වැඩි විස්තර</a>
+</div></article>
+
+<article class="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[.06] p-7 backdrop-blur">
+<div class="absolute right-0 top-0 h-32 w-32 rounded-full bg-violet-500/20 blur-3xl"></div>
+<div class="relative">
+<span class="inline-flex rounded-full bg-violet-500/15 px-3 py-1 text-xs font-black text-violet-300">2028 A/L</span>
+<h3 class="mt-5 text-2xl font-black">2028 THEORY CLASS</h3>
+<p class="mt-3 font-bold text-violet-300">🎓 2028 A/L Physics සඳහා ශක්තිමත් ආරම්භයක්.</p>
+<p class="mt-4 text-sm leading-7 text-slate-400">2028 A/L සඳහා සූදානම් වන සිසුන් වෙනුවෙන් Physics විෂයයේ මූලික සංකල්පවල සිට සම්පූර්ණ Theory දක්වා ක්‍රමානුකූලව ඉගෙනගැනීමට නිර්මාණය කළ පන්තියකි. Physics විෂයය මුල සිට නිවැරදිව අවබෝධ කරගෙන, ඉදිරියේදී ගැටලු විසඳීම සහ විභාගයට සූදානම් වීම සඳහා අවශ්‍ය ශක්තිමත් පදනමක් ගොඩනැගීම මෙහි ප්‍රධාන අරමුණයි.</p>
+<p class="mt-5 text-sm font-bold text-slate-300">සුදුසු: 2028 A/L සිසුන් සඳහා</p>
+<a href="https://wa.me/94768091175?text=Hello%20TK%20Physics%2C%20I%20am%20interested%20in%20the%202028%20Theory%20Class." target="_blank" rel="noopener" class="mt-7 block rounded-xl bg-white px-5 py-3.5 text-center font-black text-slate-950 hover:bg-violet-400 hover:text-white transition">2028 Theory Class – වැඩි විස්තර</a>
+</div></article>
+
+<article class="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[.06] p-7 backdrop-blur">
+<div class="absolute right-0 top-0 h-32 w-32 rounded-full bg-cyan-500/20 blur-3xl"></div>
+<div class="relative">
+<span class="inline-flex rounded-full bg-cyan-500/15 px-3 py-1 text-xs font-black text-cyan-300">2nd SHY</span>
+<h3 class="mt-5 text-2xl font-black">02nd SHY STUDENTS CLASS</h3>
+<p class="mt-3 font-bold text-cyan-300">🔥 නැවතත් Physics වලට හොඳම ආරම්භයක්.</p>
+<p class="mt-4 text-sm leading-7 text-slate-400">A/L Physics නැවත වරක් සිදුකරන සිසුන් වෙනුවෙන් විශේෂයෙන් සැලසුම් කළ පන්තියකි. පෙර වසරේදී ඇති වූ දුර්වලතා හඳුනාගෙන, අත්‍යවශ්‍ය Theory කොටස් නැවත පැහැදිලි කරමින්, විභාග ප්‍රශ්න විසඳීම සහ ලකුණු වැඩි කරගැනීම සඳහා අවශ්‍ය ක්‍රමවේදය ලබාදීම මෙහිදී සිදුකෙරේ.</p>
+<ul class="mt-4 space-y-2 text-sm text-slate-400">
+<li>🔹 අමාරු Theory කොටස් නැවත පැහැදිලි කිරීම</li>
+<li>🔹 වැදගත් ප්‍රශ්න හා ප්‍රශ්න රටා</li>
+<li>🔹 Past Paper / Model Paper ප්‍රශ්න</li>
+<li>🔹 දුර්වල කොටස් හඳුනාගෙන වැඩිදියුණු කිරීම</li>
+<li>🔹 විභාගයට අවශ්‍ය ප්‍රායෝගික පුහුණුව</li>
+</ul>
+<p class="mt-5 text-sm font-bold text-slate-300">සුදුසු: A/L Physics 2nd shy සිසුන් සඳහා</p>
+<a href="https://wa.me/94768091175?text=Hello%20TK%20Physics%2C%20I%20am%20interested%20in%20the%202nd%20Shy%20Students%20Class." target="_blank" rel="noopener" class="mt-7 block rounded-xl bg-white px-5 py-3.5 text-center font-black text-slate-950 hover:bg-cyan-400 hover:text-white transition">02nd Shy Class – වැඩි විස්තර</a>
+</div></article>
+
+</div>
+</div>
+</section>
+
+<section id="our-classes" class="relative overflow-hidden bg-slate-950 py-24 text-white">
+<div class="absolute -left-24 top-20 h-72 w-72 rounded-full bg-blue-600/15 blur-3xl"></div>
+<div class="absolute -right-24 bottom-10 h-80 w-80 rounded-full bg-violet-600/15 blur-3xl"></div>
+<div class="relative mx-auto max-w-7xl px-5 lg:px-8">
+<div class="mx-auto max-w-3xl text-center reveal-on-scroll">
+<span class="inline-flex items-center gap-2 rounded-full border border-blue-400/20 bg-blue-400/10 px-4 py-2 text-xs font-black uppercase tracking-[.25em] text-blue-300"><span class="h-2 w-2 rounded-full bg-blue-400 animate-pulse"></span>Our Classes</span>
+<h2 class="mt-5 text-4xl font-black tracking-tight sm:text-6xl">🎥 අපේ Classes බලන්න</h2>
+<p class="mt-5 text-lg leading-8 text-slate-400">TK Physics පන්තියේ ඉගැන්වීම් රටාව, සංකල්ප පැහැදිලි කරන ආකාරය සහ Physics තේරුම්ගන්න අපි භාවිතා කරන ක්‍රමය sample videos හරහා බලන්න.</p>
+</div>
+
+<div class="mt-14 grid gap-7 lg:grid-cols-3">
+<article class="video-card video-glow reveal-on-scroll overflow-hidden rounded-[2rem] border border-white/10 bg-white/[.06] backdrop-blur" style="animation-delay:.08s">
+<div class="relative aspect-video overflow-hidden bg-slate-900">
+<iframe class="absolute inset-0 h-full w-full" src="https://www.youtube-nocookie.com/embed/kVtpIlycz9I?rel=0&modestbranding=1" title="විද්‍යුත් ක්ෂේත්‍ර | 2027 Speed Theory" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/30 via-transparent to-transparent"></div>
+</div>
+<div class="p-6">
+<span class="text-xs font-black uppercase tracking-[.2em] text-blue-300">2027 Speed Theory</span>
+<h3 class="mt-3 text-xl font-black">විද්‍යුත් ක්ෂේත්‍ර</h3>
+<p class="mt-2 text-sm leading-6 text-slate-400">Electric Field සංකල්පය පැහැදිලිව සහ exam-focused ආකාරයෙන් ඉගෙනගන්න.</p>
+<a href="https://youtu.be/kVtpIlycz9I" target="_blank" rel="noopener" class="mt-5 inline-flex font-black text-blue-300 hover:text-white transition">YouTube එකෙන් බලන්න ↗</a>
+</div></article>
+
+<article class="video-card video-glow reveal-on-scroll overflow-hidden rounded-[2rem] border border-white/10 bg-white/[.06] backdrop-blur" style="animation-delay:.18s">
+<div class="relative aspect-video overflow-hidden bg-slate-900">
+<iframe class="absolute inset-0 h-full w-full" src="https://www.youtube-nocookie.com/embed/ExLn90IZIHw?rel=0&modestbranding=1" title="විද්‍යුත් ක්ෂේත්‍ර අමාරුද? | Electric field | 2027 Theory" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/30 via-transparent to-transparent"></div>
+</div>
+<div class="p-6">
+<span class="text-xs font-black uppercase tracking-[.2em] text-violet-300">2027 Theory • Free Seminar</span>
+<h3 class="mt-3 text-xl font-black">විද්‍යුත් ක්ෂේත්‍ර අමාරුද?</h3>
+<p class="mt-2 text-sm leading-6 text-slate-400">Electric Field එක සරලව තේරුම්ගන්න sample lesson එකක්.</p>
+<a href="https://youtu.be/ExLn90IZIHw" target="_blank" rel="noopener" class="mt-5 inline-flex font-black text-violet-300 hover:text-white transition">YouTube එකෙන් බලන්න ↗</a>
+</div></article>
+
+<article class="video-card video-glow reveal-on-scroll overflow-hidden rounded-[2rem] border border-white/10 bg-white/[.06] backdrop-blur" style="animation-delay:.28s">
+<div class="relative aspect-video overflow-hidden bg-slate-900">
+<iframe class="absolute inset-0 h-full w-full" src="https://www.youtube-nocookie.com/embed/VPpxz5pCxqQ?rel=0&modestbranding=1" title="2027 ට ගුරුත්ව ක්ෂේත්‍ර තේරෙන සිංහලෙන්" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/30 via-transparent to-transparent"></div>
+</div>
+<div class="p-6">
+<span class="text-xs font-black uppercase tracking-[.2em] text-cyan-300">2027 Theory</span>
+<h3 class="mt-3 text-xl font-black">ගුරුත්ව ක්ෂේත්‍ර තේරෙන සිංහලෙන්</h3>
+<p class="mt-2 text-sm leading-6 text-slate-400">Gravitational Fields සංකල්ප සිංහලෙන් පැහැදිලිව අවබෝධ කරගන්න.</p>
+<a href="https://youtu.be/VPpxz5pCxqQ" target="_blank" rel="noopener" class="mt-5 inline-flex font-black text-cyan-300 hover:text-white transition">YouTube එකෙන් බලන්න ↗</a>
+</div></article>
+</div>
+
+<div class="reveal-on-scroll mt-12 flex justify-center" style="animation-delay:.38s">
+<a href="https://www.youtube.com/" target="_blank" rel="noopener" class="group rounded-2xl border border-white/10 bg-white/10 px-7 py-4 font-black shadow-xl transition hover:-translate-y-1 hover:bg-white hover:text-slate-950">More Class Videos <span class="ml-2 inline-block transition group-hover:translate-x-1">→</span></a>
+</div>
+</div>
+</section>
+
+<section id="contact" class="relative overflow-hidden bg-white py-24">
+<div class="absolute inset-0 grid-bg opacity-60"></div>
+<div class="relative mx-auto max-w-4xl px-5 text-center lg:px-8">
+<span class="text-sm font-black uppercase tracking-[.25em] text-blue-600">Start Today</span>
+<h2 class="mt-5 text-4xl font-black tracking-tight sm:text-6xl">ඔබේ Physics ගමන අදම ආරම්භ කරන්න.</h2>
+<p class="mt-6 text-xl font-bold text-slate-600">Theory තේරුම් ගන්න.<br>ප්‍රශ්න විසඳන්න.<br>විභාගය ජයගන්න.</p>
+<p class="mt-6 text-lg font-black text-slate-900">TK Physics සමඟ එකතු වන්න.</p>
+<div class="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
+<a href="https://wa.me/94768091175?text=Hello%20TK%20Physics%2C%20I%20would%20like%20to%20join%20TK%20Physics." target="_blank" rel="noopener" class="rounded-2xl bg-blue-600 px-8 py-4 font-black text-white shadow-xl shadow-blue-600/20 hover:bg-blue-700 hover:-translate-y-1 transition">දැන් සම්බන්ධ වන්න</a>
+<a href="https://jbxacademy.ai.studio/" target="_blank" rel="noopener" class="rounded-2xl border border-slate-200 bg-white px-8 py-4 font-black text-slate-900 shadow-sm hover:-translate-y-1 transition">LMS Login</a>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="border-t border-slate-200 bg-slate-50">
+<div class="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-8 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between lg:px-8">
+<p>© 2026 TK PHYSICS. All rights reserved.</p><p class="font-semibold">Tharusha Liyanage • A/L Physics Online Class</p>
+</div>
+</footer>
+<script>
+const revealObserver=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');revealObserver.unobserve(entry.target)}})},{threshold:.12});
+document.querySelectorAll('.reveal-on-scroll').forEach(el=>revealObserver.observe(el));
+</script>
+</body>
+</html>
